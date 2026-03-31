@@ -1,4 +1,4 @@
-REM Author: @unveroleone | https://github.com/veroleone
+REM Author: @Mokenes | https://github.com/mokenes/M5stick-hacking-scripts-/tree/main
 REM This script automates entering a PIN code on a locked phone.
 REM IMPORTANT: Replace "1234" in the script with your actual PIN code.
 REM WARNING: Use this script only on devices you own or are authorized to access.
