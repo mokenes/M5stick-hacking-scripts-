@@ -1,4 +1,4 @@
-REM best IPhone Crasher by unveroleone
+REM best IPhone Crasher by King
 
 GUI SPACE
 GUI TAB
