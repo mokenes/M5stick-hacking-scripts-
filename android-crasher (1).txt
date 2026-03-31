@@ -1,4 +1,4 @@
-REM Author: unveroleone
+REM Author: Mokenes
 REM Purpose: Creates a loop to take screenshots and opens apps
 
 PRINTSCREEN
