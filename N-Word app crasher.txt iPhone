@@ -1,0 +1,9 @@
+REM Author: @Mokenes | https://github.com/mokenes/M5stick-hacking-scripts-
+REM Sends long text strings repeatedly
+DELAY 1000
+STRING Messages
+ENTER
+DELAY 2000
+STRING Nigger Nigger Nigger Nigger Nigger Nigger Nigger
+ENTER
+REPEAT 99999
