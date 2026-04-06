@@ -1,0 +1,21 @@
+#include <Arduino.h>
+#include <IRremoteESP8266.h>
+#include <IRsend.h>
+
+#define IR_LED 26
+
+IRsend irsend(IR_LED);
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("START");
+  irsend.begin();
+}
+
+void loop() {
+  Serial.println("Sending IR");
+
+  irsend.sendNEC(0x20DF10EF, 32);
+
+  delay(2000);
+}
