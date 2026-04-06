@@ -1,0 +1,34 @@
+#include <IRremoteESP8266.h>
+#include <IRsend.h>
+
+const uint16_t kIrLed = 26;
+
+IRsend irsend(kIrLed);
+
+void setup() {
+  Serial.begin(115200);
+  irsend.begin();
+  Serial.println("IR Multi Test Ready");
+}
+
+void loop() {
+  Serial.println("Sending NEC...");
+  irsend.sendNEC(0x20DF10EF, 32); // vanlig TV power
+  delay(2000);
+
+  Serial.println("Sending Sony...");
+  irsend.sendSony(0xA90, 12);
+  delay(2000);
+
+  Serial.println("Sending Samsung...");
+  irsend.sendSamsung(0xE0E040BF, 32);
+  delay(2000);
+
+  Serial.println("Sending RC5...");
+  irsend.sendRC5(0x100C, 12);
+  delay(2000);
+
+  Serial.println("Sending Panasonic...");
+  irsend.sendPanasonic(0x4004, 0x100BCBD);
+  delay(3000);
+}
